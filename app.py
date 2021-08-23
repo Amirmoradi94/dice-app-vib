@@ -46,20 +46,20 @@ def function():
             self.output = octavefilter(self.dataa)
     
     #x = [10, 20, 30, 40, 50, 60, 70]
-    thread_x = GetTitleThread(x)
+    #thread_x = GetTitleThread(x)
     #thread_y = GetTitleThread(y)
     #thread_z = GetTitleThread(z)
     
-    thread_x.start()
+    #thread_x.start()
     #thread_y.start()
     #thread_z.start()
     
-    thread_x.join()
+    #thread_x.join()
     #thread_y.join()
     #thread_z.join()
     
     
-    xx = thread_x.output
+    #xx = thread_x.output
     #yy = thread_y.output
     #zz = thread_z.output
     
@@ -83,7 +83,7 @@ def function():
     #print(np.sqrt(np.square(xx) + np.square(yy) + np.square(zz)))
     
     
-    output = {"threshold": str(xx)}
+    output = {"threshold": str(1.5)}
     return jsonify(output)
     
 
