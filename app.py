@@ -20,12 +20,12 @@ def function():
     dataset = request_data["dataset"]
     
 
-    #"""
+    """
     x.append(dataset[0])
     y.append(dataset[1])
     z.append(dataset[2])
     
-    #"""
+    """
     #start = timeit.timeit()
     
     
