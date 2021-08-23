@@ -5,7 +5,7 @@ from filter_ import octavefilter
 #from test_func import amir
 #import numpy as np
 #import timeit
-from threading import Thread
+#from threading import Thread
 #import concurrent.futures
 #from multiprocessing.pool import ThreadPool
 
@@ -35,7 +35,7 @@ def function():
     return_val = x_thread.get()
     """
     
-    
+    """
     class GetTitleThread(Thread):  
         def __init__(self, data):
             self.output = 0
@@ -44,7 +44,7 @@ def function():
             
         def run(self):
             self.output = octavefilter(self.dataa)
-            
+    """      
     #xx = octavefilter(x)
     
     #x = [10, 20, 30, 40, 50, 60, 70]
@@ -85,8 +85,8 @@ def function():
     #print(np.sqrt(np.square(xx) + np.square(yy) + np.square(zz)))
     
     
-    output = {"threshold": str(type(dataset)}
-    return jsonify(output)
+    outputt = {"threshold": str(type(dataset)}
+    return jsonify(outputt)
     
 
 if __name__ == "__main__":
