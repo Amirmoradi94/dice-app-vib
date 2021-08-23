@@ -29,10 +29,8 @@ def getansifrequencies(fraction, limits=None):
 
     if limits is None:
         limits = [4, 2000]
-    
-    # Octave ratio g (ANSI s1.11, 3.2, pg. 2)
+
     g = 10 ** (3 / 10)  # Or g = 2
-    # Reference frequency (ANSI s1.11, 3.4, pg. 2)
     fr = 1000
     
     # Get starting index 'x' and first center frequency
@@ -75,7 +73,6 @@ def _genfreqs(limits, fraction, fs):
 
 
 def _thirdoctave():
-    # IEC 61260 - 1 - 2014 (added 12.5, 16, 20 Hz)
     return [4, 5, 6.3, 8, 10, 12.5, 16, 20, 25, 31.5, 40, 50, 63, 80, 100, 
             125, 160, 200, 250, 315, 400, 500, 630, 800, 1000, 1250, 1600, 2000]
 
