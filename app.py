@@ -44,22 +44,24 @@ def function():
             
         def run(self):
             self.output = octavefilter(self.dataa)
+            
+    xx = octavefilter(x)
     
     #x = [10, 20, 30, 40, 50, 60, 70]
-    thread_x = GetTitleThread(x)
+    #thread_x = GetTitleThread(x)
     #thread_y = GetTitleThread(y)
     #thread_z = GetTitleThread(z)
     
-    thread_x.start()
+    #thread_x.start()
     #thread_y.start()
     #thread_z.start()
     
-    thread_x.join()
+    #thread_x.join()
     #thread_y.join()
     #thread_z.join()
     
     
-    xx = thread_x.output
+    #xx = thread_x.output
     #yy = thread_y.output
     #zz = thread_z.output
     
@@ -92,7 +94,7 @@ if __name__ == "__main__":
     x , y, z = [], [], []
     #host= '192.168.2.23'
     
-    app.run(threaded=True,)
+    app.run()
 
     
     
