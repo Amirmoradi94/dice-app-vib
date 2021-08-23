@@ -5,7 +5,7 @@ from filter_ import octavefilter
 #from test_func import amir
 #import numpy as np
 #import timeit
-#from threading import Thread
+from threading import Thread
 #import concurrent.futures
 #from multiprocessing.pool import ThreadPool
 
