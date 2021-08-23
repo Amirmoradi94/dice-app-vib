@@ -85,7 +85,7 @@ def function():
     #print(np.sqrt(np.square(xx) + np.square(yy) + np.square(zz)))
     
     
-    output = {"threshold": str(type(dataset)}
+    output = {"threshold": str(10000)}
     return jsonify(output)
     
 
