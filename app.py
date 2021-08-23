@@ -21,9 +21,9 @@ def function():
     
 
     #"""
-    #x.append(dataset[0])
-    #y.append(dataset[1])
-    #z.append(dataset[2])
+    x.append(dataset[0])
+    y.append(dataset[1])
+    z.append(dataset[2])
     
     #"""
     #start = timeit.timeit()
@@ -45,7 +45,7 @@ def function():
         def run(self):
             self.output = octavefilter(self.dataa)
     
-    x = [10, 20, 30, 40, 50, 60, 70]
+    #x = [10, 20, 30, 40, 50, 60, 70]
     thread_x = GetTitleThread(x)
     #thread_y = GetTitleThread(y)
     #thread_z = GetTitleThread(z)
@@ -83,7 +83,7 @@ def function():
     #print(np.sqrt(np.square(xx) + np.square(yy) + np.square(zz)))
     
     
-    output = {"threshold": str(1.5)}
+    output = {"threshold": str(xx)}
     return jsonify(output)
     
 
