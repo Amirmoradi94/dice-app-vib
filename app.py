@@ -36,7 +36,7 @@ def function():
     return_val = x_thread.get()
     """
     
-    """
+    #"""
     class GetTitleThread(Thread):  
         def __init__(self, data):
             self.output = 0
@@ -45,7 +45,7 @@ def function():
             
         def run(self):
             self.output = octavefilter(self.dataa)
-    """      
+    #"""      
     #xx = octavefilter(x)
     
     #x = [10, 20, 30, 40, 50, 60, 70]
