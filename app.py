@@ -9,6 +9,7 @@ from filter_ import octavefilter
 #import concurrent.futures
 #from multiprocessing.pool import ThreadPool
 
+x , y, z = [], [], []
 
 app = Flask(__name__) #intance of our flask application 
 
@@ -20,12 +21,12 @@ def function():
     dataset = request_data["dataset"]
     
 
-    """
+    #"""
     x.append(dataset[0])
     y.append(dataset[1])
     z.append(dataset[2])
     
-    """
+    #"""
     #start = timeit.timeit()
     
     
@@ -91,7 +92,7 @@ def function():
 
 if __name__ == "__main__":
         
-    x , y, z = [], [], []
+    
     #host= '192.168.2.23'
     
     app.run()
