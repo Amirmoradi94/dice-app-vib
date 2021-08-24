@@ -6,22 +6,21 @@ from scipy import signal
 
 #"""
 def _initindex(f, fr, g, b):
-    if b % 2:  # ODD ('x' solve from ANSI s1.11, eq. 3)
+    if b % 2:
         return np.round(
                 (b * np.log(f / fr) + 30 * np.log(g)) / np.log(g)
                 )
-    else:  # EVEN ('x' solve from ANSI s1.11, eq. 4)
+    else: 
         return np.round((2 * b * np.log(f / fr) + 59 * np.log(g)) / (2 * np.log(g)))  
 
 
 def _ratio(g, x, b):
-    if b % 2:  # ODD (ANSI s1.11, eq. 3)
+    if b % 2:  
         return g ** ((x - 30) / b)
-    else:  # EVEN (ANSI s1.11, eq. 4)
+    else:  
         return g ** ((2 * x - 59) / (2 * b))
 
 def _bandedge(g, b):
-    # Band-edge ratio (ANSI s1.11, 3.7, pg. 3)
     return g ** (1 / (2 * b))
 
 
