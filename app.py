@@ -95,7 +95,7 @@ if __name__ == "__main__":
     
     #host= '192.168.2.23'
     
-    app.run(threaded=True, use_reloader: False)
+    app.run(threaded=True, use_reloader= False)
 
     
     
