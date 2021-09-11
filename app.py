@@ -29,20 +29,20 @@ def function():
             
     #xx = octavefilter(x)
     
-    thread_x = GetTitleThread(x)
+    #thread_x = GetTitleThread(x)
     #thread_y = GetTitleThread(y)
     #thread_z = GetTitleThread(z)
     
-    thread_x.start()
+    #thread_x.start()
     #thread_y.start()
     #thread_z.start()
     
-    thread_x.join()
+    #thread_x.join()
     #thread_y.join()
     #thread_z.join()
     
     
-    xx = thread_x.output
+    #xx = thread_x.output
     #yy = thread_y.output
     #zz = thread_z.output
 
