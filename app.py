@@ -49,7 +49,7 @@ def function():
     #print(np.sqrt(np.square(xx) + np.square(yy) + np.square(zz)))
     
     
-    output = {"threshold": str(np.sqrt(np.square(xx)))}
+    output = {"threshold": "1"}
     return jsonify(output)
     
 
